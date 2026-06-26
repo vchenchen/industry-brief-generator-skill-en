@@ -2,6 +2,8 @@
 
 A Codex Skill for creating candidate-first industry briefings from current overseas market sources.
 
+Chinese edition: [industry-brief-generator-skill-zh](https://github.com/vchenchen/industry-brief-generator-skill-zh)
+
 The workflow separates research from publishing: Codex first produces a sourced candidate pool, waits for the user to select the final items, and only then creates the final brief, poster, and channel copy.
 
 ## What It Does
@@ -13,6 +15,18 @@ The workflow separates research from publishing: Codex first produces a sourced 
 - Generates internal briefs, customer updates, newsletter copy, social copy, or poster-style summaries
 - Refuses to fabricate sources, dates, company actions, or links
 - Includes poster QA rules for text overflow, awkward line breaks, and crowded footer layouts
+
+## Why Candidate-First
+
+The biggest risk in daily industry briefings is not formatting. It is weak topic selection. This skill keeps research and publishing separate so a human can choose the final stories before Codex generates the final assets.
+
+It is useful for:
+
+- market intelligence briefings
+- overseas industry news tracking
+- distributor and agency opportunity scans
+- internal strategy updates
+- newsletter, social, and customer-facing content workflows
 
 ## Install
 
@@ -31,6 +45,18 @@ your-project/.agents/skills/industry-brief-generator/
 ```
 
 If the skill does not appear, restart Codex.
+
+## Quick Start
+
+```text
+Use $industry-brief-generator.
+
+Industry: office supplies
+Target market: global
+Focus topics: industry news, trade shows, new products, distributor and agency opportunities
+Excluded content: social media posts and corporate soft copy
+Final use: internal company brief
+```
 
 ## Usage
 
@@ -84,6 +110,10 @@ The skill includes sample YAML configs for:
 - office supplies
 
 You can adapt these configs for any industry.
+
+## Release Notes
+
+See [CHANGELOG.md](CHANGELOG.md).
 
 ## Good For
 
