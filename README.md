@@ -28,6 +28,20 @@ It is useful for:
 - internal strategy updates
 - newsletter, social, and customer-facing content workflows
 
+## Demo Posters
+
+### Pet Industry
+
+![Pet industry briefing poster](docs/pet-industry-demo-poster.png)
+
+### Chemicals
+
+![Chemicals industry briefing poster](docs/chemicals-demo-poster.png)
+
+### Commercial Real Estate
+
+![Commercial real estate briefing poster](docs/commercial-real-estate-demo-poster.png)
+
 ## Install
 
 This repository uses the Codex repository-scope skill layout:
