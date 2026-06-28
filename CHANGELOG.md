@@ -2,7 +2,7 @@
 
 ## v1.0.0 - Initial English Release
 
-- Added the repository-scope Codex Skill at `.agents/skills/industry-brief-generator/`.
+- Added the repository-scope Codex Skill at `.agents/skills/industry-brief-generator-en/`.
 - Added a candidate-first industry brief workflow.
 - Added templates for candidate pools, final briefs, poster output, and unsupported-industry handling.
 - Added sample configs for fitness, chemicals, pet industry, hotels, commercial real estate, and office supplies.

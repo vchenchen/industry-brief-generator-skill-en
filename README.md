@@ -47,7 +47,7 @@ It is useful for:
 This repository uses the Codex repository-scope skill layout:
 
 ```text
-.agents/skills/industry-brief-generator/
+.agents/skills/industry-brief-generator-en/
 ```
 
 Clone this repository and start Codex from the repository root. Codex should detect the skill automatically.
@@ -55,7 +55,7 @@ Clone this repository and start Codex from the repository root. Codex should det
 You can also copy the skill into another project:
 
 ```text
-your-project/.agents/skills/industry-brief-generator/
+your-project/.agents/skills/industry-brief-generator-en/
 ```
 
 If the skill does not appear, restart Codex.
@@ -63,7 +63,7 @@ If the skill does not appear, restart Codex.
 ## Quick Start
 
 ```text
-Use $industry-brief-generator.
+Use $industry-brief-generator-en.
 
 Industry: office supplies
 Target market: global
@@ -77,7 +77,7 @@ Final use: internal company brief
 Explicit invocation:
 
 ```text
-Use $industry-brief-generator to create a candidate-first overseas industry brief.
+Use $industry-brief-generator-en to create a candidate-first overseas industry brief.
 ```
 
 Recommended input format:
@@ -93,7 +93,7 @@ Final use, such as internal brief, newsletter, customer update, or social post:
 Example:
 
 ```text
-Use $industry-brief-generator.
+Use $industry-brief-generator-en.
 
 Industry: office supplies
 Target market: global
@@ -153,7 +153,7 @@ If public information is insufficient, it should stop and ask for better sources
 ## Repository Structure
 
 ```text
-.agents/skills/industry-brief-generator/
+.agents/skills/industry-brief-generator-en/
 ├── SKILL.md
 ├── agents/openai.yaml
 ├── references/

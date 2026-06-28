@@ -3,7 +3,7 @@
 ## Office Supplies
 
 ```text
-Use $industry-brief-generator.
+Use $industry-brief-generator-en.
 
 Industry: office supplies
 Target market: global
@@ -15,7 +15,7 @@ Final use: internal company brief
 ## Pet Industry
 
 ```text
-Use $industry-brief-generator.
+Use $industry-brief-generator-en.
 
 Industry: pet industry
 Target market: North America
@@ -27,7 +27,7 @@ Final use: social media briefing
 ## Chemicals
 
 ```text
-Use $industry-brief-generator.
+Use $industry-brief-generator-en.
 
 Industry: chemicals
 Target market: Europe and North America
@@ -39,7 +39,7 @@ Final use: internal brief
 ## Broad Industry Boundary
 
 ```text
-Use $industry-brief-generator.
+Use $industry-brief-generator-en.
 
 Industry: manufacturing
 Target market: global
