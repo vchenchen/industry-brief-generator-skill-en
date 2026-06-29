@@ -1,46 +1,70 @@
 # Industry Brief Generator Skill
 
-A Codex Skill for creating candidate-first industry briefings from current overseas market sources.
+A universal industry brief generator.
+
+Input an industry, target market, focus topics, exclusions, and final use. It first creates 20 sourced candidate topics. After you select 8, it generates the final brief, poster, and channel-ready copy.
 
 Chinese edition: [industry-brief-generator-skill-zh](https://github.com/vchenchen/industry-brief-generator-skill-zh)
 
-The workflow separates research from publishing: Codex first produces a sourced candidate pool, waits for the user to select the final items, and only then creates the final brief, poster, and channel copy.
+## Solves This Pain
+
+The hardest part of a daily industry brief is not formatting. It is finding strong topics without turning soft copy into "industry news."
+
+This skill separates research from publishing:
+
+1. Generate a sourced candidate pool first.
+2. Let the user choose the final stories.
+3. Only then generate the final brief, poster, and copy.
+
+## Demo
+
+### Candidate Pool Preview
+
+![Candidate topic pool preview](docs/candidate-pool-preview.png)
+
+### Final Poster Demos
+
+| Pet Industry | Chemicals | Commercial Real Estate |
+|---|---|---|
+| ![Pet industry briefing poster](docs/pet-industry-demo-poster.png) | ![Chemicals industry briefing poster](docs/chemicals-demo-poster.png) | ![Commercial real estate briefing poster](docs/commercial-real-estate-demo-poster.png) |
+
+Recommended demo prompts:
+
+- Pet Industry | North America | Social Brief
+- Office Supplies | Global | Internal Brief
+- Chemicals | Europe and North America | Pricing, Supply, Capacity
 
 ## What It Does
 
 - Takes an industry, target market, focus topics, exclusions, and final use case
 - Searches current overseas industry news, trade shows, product launches, M&A, policy updates, and trends
-- Produces a candidate pool before any final output
-- Waits for the user to select the final items
+- Produces 20 candidate topics before any final output
+- Waits for the user to select 8 final items
 - Generates internal briefs, customer updates, newsletter copy, social copy, or poster-style summaries
-- Refuses to fabricate sources, dates, company actions, or links
 - Includes poster QA rules for text overflow, awkward line breaks, and crowded footer layouts
 
-## Why Candidate-First
+## Trust-First Rules
 
-The biggest risk in daily industry briefings is not formatting. It is weak topic selection. This skill keeps research and publishing separate so a human can choose the final stories before Codex generates the final assets.
+The most important feature is restraint.
 
-It is useful for:
+This skill does not:
 
-- market intelligence briefings
-- overseas industry news tracking
-- distributor and agency opportunity scans
-- internal strategy updates
-- newsletter, social, and customer-facing content workflows
+- fabricate sources, dates, company actions, or links
+- turn social media posts into industry facts
+- use generic finance news as filler
+- generate final posters before the user selects final items
 
-## Demo Posters
+If public information is insufficient, it stops and asks for better sources, a narrower industry boundary, company names, or permission to include older background material.
 
-### Pet Industry
+## Good For
 
-![Pet industry briefing poster](docs/pet-industry-demo-poster.png)
-
-### Chemicals
-
-![Chemicals industry briefing poster](docs/chemicals-demo-poster.png)
-
-### Commercial Real Estate
-
-![Commercial real estate briefing poster](docs/commercial-real-estate-demo-poster.png)
+- consultants
+- market research teams
+- international business teams
+- content operators
+- industry media
+- sales and BD teams
+- export, distribution, and agency teams
 
 ## Install
 
@@ -52,10 +76,11 @@ This repository uses the Codex repository-scope skill layout:
 
 Clone this repository and start Codex from the repository root. Codex should detect the skill automatically.
 
-You can also copy the skill into another project:
+You can also install it from GitHub:
 
-```text
-your-project/.agents/skills/industry-brief-generator-en/
+```bash
+python3 /Users/vchen/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --url https://github.com/vchenchen/industry-brief-generator-skill-en/tree/main/.agents/skills/industry-brief-generator-en
 ```
 
 If the skill does not appear, restart Codex.
@@ -70,17 +95,10 @@ Target market: global
 Focus topics: industry news, trade shows, new products, distributor and agency opportunities
 Excluded content: social media posts and corporate soft copy
 Final use: internal company brief
+Preferred output language: English
 ```
 
-## Usage
-
-Explicit invocation:
-
-```text
-Use $industry-brief-generator-en to create a candidate-first overseas industry brief.
-```
-
-Recommended input format:
+## Input Format
 
 ```text
 Industry:
@@ -88,33 +106,18 @@ Target market, such as North America, Europe, APAC, or global:
 Focus topics, such as M&A, pricing, supply and demand, capacity expansion, policy, trade shows, or new products:
 Excluded content, such as generic finance, social media posts, or corporate soft copy:
 Final use, such as internal brief, newsletter, customer update, or social post:
-```
-
-Example:
-
-```text
-Use $industry-brief-generator-en.
-
-Industry: office supplies
-Target market: global
-Focus topics: industry news, trade shows, new products, distributor and agency opportunities
-Excluded content: social media posts and corporate soft copy
-Final use: internal company brief
+Preferred output language:
 ```
 
 ## Workflow
 
 1. Read or create an industry config.
 2. Search current sources and generate a candidate pool first.
-3. Wait for the user to choose the required number of item numbers.
-4. Generate the final brief and poster only after selection.
+3. Wait for the user to choose 8 item numbers.
+4. Generate the final brief, poster, and channel copy.
 5. Visually inspect the poster before delivery.
 
-The skill intentionally blocks final output until the user selects the final items.
-
 ## Included Example Configs
-
-The skill includes sample YAML configs for:
 
 - fitness
 - chemicals
@@ -123,32 +126,21 @@ The skill includes sample YAML configs for:
 - commercial real estate
 - office supplies
 
-You can adapt these configs for any industry.
+## Promotion Kit
 
-## Release Notes
+Launch copy: [docs/promotion-copy-en.md](docs/promotion-copy-en.md)
 
-See [CHANGELOG.md](CHANGELOG.md).
+Suggested channels:
 
-## Good For
+- GitHub
+- LinkedIn
+- OpenAI/Codex communities
+- Product Hunt later
+- Hacker News later
 
-- Market research teams
-- Consulting teams
-- Industry media operators
-- International business development
-- Content teams
-- Internal strategy briefings
-- Export, distribution, and agency teams
+## Roadmap
 
-## Trust Rules
-
-The skill should not:
-
-- fabricate sources, dates, companies, or links
-- turn self-media posts into industry facts
-- include weakly related financial news just to fill the list
-- generate final posters before the user selects final items
-
-If public information is insufficient, it should stop and ask for better sources, company names, narrower industry boundaries, or permission to use older background materials.
+Use the Skill first to validate adoption. The next product step is packaging it as a Codex Plugin with a smoother install experience, icon, default prompts, and demos.
 
 ## Repository Structure
 
@@ -159,10 +151,6 @@ If public information is insufficient, it should stop and ask for better sources
 ├── references/
 └── assets/configs/
 ```
-
-## Notes
-
-The original workflow was designed for Chinese-language industry briefings, but the skill instructions are written in English so teams can adapt the output language to their own audience.
 
 ## License
 

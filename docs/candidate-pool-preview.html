@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Candidate Pool Preview</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      width: 1200px;
+      height: 820px;
+      background: #f5f1e8;
+      font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+      color: #151515;
+    }
+    .page {
+      width: 1200px;
+      height: 820px;
+      padding: 42px 54px;
+      background: linear-gradient(120deg, #fffaf0 0%, #fffaf0 66%, #dcff9a 100%);
+    }
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 26px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+    .mark {
+      width: 74px;
+      height: 74px;
+      border: 3px solid #151515;
+      background: #a7ff35;
+      display: grid;
+      place-items: center;
+      font-size: 42px;
+      font-weight: 950;
+      box-shadow: 6px 6px 0 #151515;
+    }
+    h1 {
+      margin: 0;
+      font-size: 38px;
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+    .date {
+      border: 2px solid #151515;
+      padding: 12px 16px;
+      font-size: 22px;
+      font-weight: 900;
+      background: #fffdf7;
+    }
+    .themes {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .theme {
+      border: 2px solid #151515;
+      background: #fffdf7;
+      min-height: 84px;
+      padding: 14px;
+      font-size: 20px;
+      line-height: 1.2;
+      font-weight: 850;
+    }
+    .label {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 26px;
+      font-weight: 950;
+      margin-bottom: 14px;
+    }
+    .bar {
+      width: 52px;
+      height: 14px;
+      background: #ff6549;
+      border: 2px solid #151515;
+    }
+    .items {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .item {
+      border: 2px solid #151515;
+      background: rgba(255,255,255,0.78);
+      padding: 16px 18px;
+      min-height: 132px;
+      box-shadow: 5px 5px 0 #151515;
+    }
+    .meta {
+      font-size: 17px;
+      font-weight: 900;
+      color: #4b4b4b;
+      margin-bottom: 8px;
+    }
+    .title {
+      font-size: 25px;
+      line-height: 1.08;
+      font-weight: 950;
+      margin-bottom: 8px;
+    }
+    .text {
+      font-size: 18px;
+      line-height: 1.28;
+      font-weight: 750;
+      color: #3d3d3d;
+    }
+    .gate {
+      margin-top: 22px;
+      background: #151515;
+      color: #fff;
+      padding: 18px 22px;
+      font-size: 24px;
+      font-weight: 950;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .gate span:last-child { color: #a7ff35; }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="top">
+      <div class="brand">
+        <div class="mark">I</div>
+        <div>
+          <h1>Industry Brief Generator<br>Candidate Topic Pool</h1>
+        </div>
+      </div>
+      <div class="date">Candidate First</div>
+    </section>
+
+    <div class="label"><span class="bar"></span><span>Today's Main Themes</span></div>
+    <section class="themes">
+      <div class="theme">Keep topic selection human before final publishing.</div>
+      <div class="theme">Filter out soft copy, social posts, and generic finance filler.</div>
+      <div class="theme">Stop when sources are weak. Do not invent links.</div>
+    </section>
+
+    <div class="label"><span class="bar"></span><span>Candidate Examples</span></div>
+    <section class="items">
+      <article class="item">
+        <div class="meta">1. [1 | Channel | North America]</div>
+        <div class="title">Pet cleaning products move into subscription replenishment</div>
+        <div class="text">Each item keeps source/date, summary, rationale, angle, and link for review.</div>
+      </article>
+      <article class="item">
+        <div class="meta">2. [2 | New Products | Global]</div>
+        <div class="title">Office furniture shifts toward smart work settings</div>
+        <div class="text">Structured candidates reduce manual sorting time for research teams.</div>
+      </article>
+      <article class="item">
+        <div class="meta">3. [3 | Supply | Europe & North America]</div>
+        <div class="title">Chemical capacity changes reshape regional supply timing</div>
+        <div class="text">Useful for market research, internal briefings, and customer updates.</div>
+      </article>
+      <article class="item">
+        <div class="meta">...</div>
+        <div class="title">20 candidates first. User selects 8.</div>
+        <div class="text">Final brief, poster, and copy are generated only after selection.</div>
+      </article>
+    </section>
+
+    <section class="gate">
+      <span>Workflow Gate</span>
+      <span>Please reply with 8 item numbers</span>
+    </section>
+  </main>
+</body>
+</html>
