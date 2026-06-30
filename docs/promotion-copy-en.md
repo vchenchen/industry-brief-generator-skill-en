@@ -17,7 +17,7 @@ Trust rules matter:
 
 Useful for consultants, market research teams, international business teams, content operators, industry media, and sales/BD teams.
 
-GitHub: https://github.com/vchenchen/industry-brief-generator-skill-en
+GitHub: https://github.com/vchenchen/industry-brief-generator-skill-english
 
 ## Product Hunt
 

@@ -4,7 +4,7 @@ A universal industry brief generator.
 
 Input an industry, target market, focus topics, exclusions, and final use. It first creates 20 sourced candidate topics. After you select 8, it generates the final brief, poster, and channel-ready copy.
 
-Chinese edition: [industry-brief-generator-skill-zh](https://github.com/vchenchen/industry-brief-generator-skill-zh)
+Chinese edition: [industry-brief-generator-skill-chinese](https://github.com/vchenchen/industry-brief-generator-skill-chinese)
 
 ## Solves This Pain
 
@@ -80,7 +80,7 @@ You can also install it from GitHub:
 
 ```bash
 python3 /Users/vchen/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
-  --url https://github.com/vchenchen/industry-brief-generator-skill-en/tree/main/.agents/skills/industry-brief-generator-english
+  --url https://github.com/vchenchen/industry-brief-generator-skill-english/tree/main/.agents/skills/industry-brief-generator-english
 ```
 
 If the skill does not appear, restart Codex.
