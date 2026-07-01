@@ -1,8 +1,8 @@
 # Industry Brief Generator Skill
 
-Codex Skill: a universal industry brief generator.
+Codex Skill: a universal industry news briefing generator.
 
-Enter an industry, market, focus topics, exclusions, and final use. It generates 20 sourced story candidates first. After you choose 8, it automatically creates the brief, poster, and channel-ready copy.
+Enter an industry, market, focus topics, and final use. It generates candidate story topics first. After you choose 8, it automatically creates the brief, poster, and channel-ready copy.
 
 Chinese edition: [industry-brief-generator-skill-chinese](https://github.com/vchenchen/industry-brief-generator-skill-chinese)
 
